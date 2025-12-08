@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥤 Coca Cola Official</title>
+    <link rel="icon" type="image/png" href="coca-logo.png">
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showPage('home'); return false;">
+                <img src="navbar atas kiri.png" alt="Coca Cola Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#" onclick="showPage('home'); return false;">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#"
+                            onclick="showPage('product'); return false;">Product</a></li>
+                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#" onclick="showPage('about'); return false;">About
+                            Brand</a></li>
+                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#"
+                            onclick="showPage('contact'); return false;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HOME PAGE ===== -->
+    <div id="home" class="page-section active">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Coca Cola - Taste The Feeling</h2>
+                <p>Rasakan kesegaran yang memanjakan lidah dengan minuman ikonik dunia</p>
+                <button class="btn btn-primary"
+                    onclick="document.getElementById('home-about').scrollIntoView({behavior: 'smooth'})">Pelajari Lebih
+                    Lanjut</button>
+            </div>
+        </section>
+
+        <!-- About Produk Section -->
+        <section id="home-about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Tentang Coca Cola</h2>
+                        <p>Coca-Cola adalah minuman berkarbonasi paling ikonik di dunia yang telah menemani momen
+                            berharga Anda selama lebih dari satu abad. Dengan rasa yang sempurna dan kesegaran yang tak
+                            tertandingi, Coca-Cola adalah pilihan utama untuk setiap kesempatan—dari perayaan
+                            kebersamaan hingga momen santai pribadi. Setiap tegukan membawa pengalaman rasa yang
+                            konsisten dan memuaskan.</p>
+                        <p>Coca-Cola diproduksi dengan formula rahasia yang telah teruji dan dipercaya jutaan orang di
+                            seluruh dunia. Kami menggunakan bahan-bahan berkualitas tinggi dan menjaga standar produksi
+                            tertinggi untuk memastikan setiap botol memberikan kepuasan maksimal.</p>
+                        <p>Dengan kehadiran di lebih dari 200 negara, Coca-Cola adalah simbol dari kualitas,
+                            kepercayaan, dan kegembiraan. Rasakan sendiri mengapa Coca-Cola tetap menjadi minuman
+                            pilihan nomor satu di dunia.</p>
+                    </div>
+                    <div class="about-image">
+                        <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://i.pinimg.com/736x/b6/95/c3/b695c35d2feeba11ec91c563c9d353c4.jpg"
+                                        alt="Coca Cola Bottle" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cola 1.jpeg" alt="Coca Cola Can" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cola 2.jpeg" alt="Coca Cola Glass" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cola 3.jpeg" alt="Coca Cola Advertisement" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="cola" alt="Coca Cola Celebration" class="d-block w-100">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Nikmati Coca Cola Sekarang Juga!</h2>
+                <p>Rasakan penyegaran yang luar biasa dengan minuman ikonik dunia</p>
+                <button id="waButton-home" class="btn btn-large" data-phone="6281315770451"
+                    onclick="openWhatsApp(event)">Pesan Lewat WhatsApp</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== PRODUCT PAGE ===== -->
+    <div id="product" class="page-section">
+        <!-- Page Header -->
+        <section class="bg-danger text-white py-5">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold">Produk Coca Cola</h1>
+                <p class="lead">Berbagai pilihan rasa untuk setiap selera</p>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center font-weight-bold mb-5">Koleksi Produk Kami</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm" style="border-left: 4px solid #E41B17;">
+                            <div class="card-body text-center">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🔴</div>
+                                <h5 class="card-title font-weight-bold">Coca Cola Classic</h5>
+                                <p class="card-text">Rasa original yang sempurna, kesegaran sejati</p>
+                                <small class="text-muted">Tersedia di berbagai ukuran</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm" style="border-left: 4px solid #E41B17;">
+                            <div class="card-body text-center">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">⚫</div>
+                                <h5 class="card-title font-weight-bold">Coca Cola Zero</h5>
+                                <p class="card-text">Tanpa gula, rasa tetap sempurna</p>
+                                <small class="text-muted">Pilihan sehat untuk Anda</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm" style="border-left: 4px solid #E41B17;">
+                            <div class="card-body text-center">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">💚</div>
+                                <h5 class="card-title font-weight-bold">Sprite</h5>
+                                <p class="card-text">Lemon-lime dengan kesegaran maksimal</p>
+                                <small class="text-muted">Obey Your Thirst</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm" style="border-left: 4px solid #E41B17;">
+                            <div class="card-body text-center">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🌈</div>
+                                <h5 class="card-title font-weight-bold">Fanta</h5>
+                                <p class="card-text">Berbagai rasa buah-buahan yang menyenangkan</p>
+                                <small class="text-muted">Warna-warni keseruan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm" style="border-left: 4px solid #E41B17;">
+                            <div class="card-body text-center">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">💧</div>
+                                <h5 class="card-title font-weight-bold">Dasani</h5>
+                                <p class="card-text">Air mineral murni dengan kualitas terbaik</p>
+                                <small class="text-muted">Hidrasi alami untuk Anda</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm" style="border-left: 4px solid #E41B17;">
+                            <div class="card-body text-center">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🧡</div>
+                                <h5 class="card-title font-weight-bold">Minute Maid</h5>
+                                <p class="card-text">Jus buah asli dengan nutrisi lengkap</p>
+                                <small class="text-muted">Kesegaran alami setiap hari</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-danger text-white py-5">
+            <div class="container text-center">
+                <h2 class="display-4 font-weight-bold mb-3">Nikmati Coca Cola Sekarang Juga!</h2>
+                <p class="lead mb-4">Rasakan penyegaran yang luar biasa dengan minuman ikonik dunia</p>
+                <button id="waButton-product" class="btn btn-light btn-lg font-weight-bold" data-phone="6281315770451"
+                    onclick="openWhatsApp(event)">Pesan Lewat WhatsApp</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== ABOUT PAGE ===== -->
+    <div id="about" class="page-section">
+        <!-- Page Header -->
+        <section class="bg-danger text-white py-5">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold">Video Promosi</h1>
+                <p class="lead">Lihat koleksi video kampanye Coca Cola</p>
+            </div>
+        </section>
+
+        <!-- Video Gallery Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center font-weight-bold mb-5">Video Promosi Coca Cola</h2>
+
+                <!-- Video Player -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-12">
+                        <div class="card shadow-lg">
+                            <video width="100%" height="600" controls style="display: block; background: black;">
+                                <source src="VIDEO KELOMPOK 1.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-danger text-white py-5">
+            <div class="container text-center">
+                <h2 class="display-4 font-weight-bold mb-3">Nikmati Coca Cola Sekarang Juga!</h2>
+                <p class="lead mb-4">Rasakan penyegaran yang luar biasa dengan minuman ikonik dunia</p>
+                <button id="waButton-about" class="btn btn-light btn-lg font-weight-bold" data-phone="6281315770451"
+                    onclick="openWhatsApp(event)">Pesan Lewat WhatsApp</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== CONTACT PAGE ===== -->
+    <div id="contact" class="page-section">
+        <!-- Page Header -->
+        <section class="bg-danger text-white py-5">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold">Hubungi Kami</h1>
+                <p class="lead">Kami siap melayani Anda</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 class="font-weight-bold mb-4">Informasi Kontak</h2>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger font-weight-bold">📧 Email</h5>
+                                <p class="card-text">info@cocacola.com</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-danger font-weight-bold">📱 WhatsApp</h5>
+                                <p class="card-text">+62 813-1577-0451</p>
+                                <button id="waButton-contact" class="btn btn-danger btn-sm" data-phone="6281315770451"
+                                    onclick="openWhatsApp(event)">Chat Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="font-weight-bold mb-4">Form Kontak</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subjek">Subjek</label>
+                                <input type="text" class="form-control" id="subjek" placeholder="Masukkan subjek pesan"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan</label>
+                                <textarea class="form-control" id="pesan" rows="5"
+                                    placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block font-weight-bold">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="font-weight-bold">Coca Cola</h5>
+                    <p>Minuman ikonik yang menyegarkan setiap momen Anda — rasakan "Taste the Feeling".</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="font-weight-bold">Kontak Kami</h5>
+                    <p>Email: info@cocacola.com</p>
+                    <p>WhatsApp: +62 813-1577-0451</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="font-weight-bold">Ikuti Kami</h5>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@cocacola" class="text-white mr-3">TikTok</a>
+                        <a href="https://www.instagram.com/cocacola" class="text-white mr-3">Instagram</a>
+                        <a href="https://www.twitter.com/cocacola" class="text-white">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center">
+                <p>&copy; 2025 Coca Cola. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Show/Hide Pages
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Kami akan menghubungi Anda segera.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
